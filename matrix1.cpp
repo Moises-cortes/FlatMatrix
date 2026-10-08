@@ -20,15 +20,21 @@ read-only references (const Matrix<T>&).
 int main() {
     try {
         // TODO: Initialize a 2x3 matrix with different initial values
-
+        Matrix1<int> initialMatrix(2,3,0);
 
         // TODO: Create a 2x3 matrix: 1,2,3 (row1) and 4,5,6 (row2).
-        Matrix1<int> mat1 ...
+        Matrix1<int> mat1(2,3);
+        mat1(0, 0) = 1;
+        mat1(0, 1) = 2;
+        mat1(0, 2) = 3;
+        mat1(1, 0) = 4;
+        mat1(1, 1) = 5;
+        mat1(1, 2) = 6;
 
         // TODO: Create a second matrix. It may have any values you choose
         //       and should be configured so that matrix multiplication may
         //       be performed.
-        Matrix1<int> mat2 ...
+        Matrix1<int> mat2(3,2,1);
 
         std::cout << "Matrix A :\n"; mat1.print();
         std::cout << "\nMatrix B :\n"; mat2.print();
